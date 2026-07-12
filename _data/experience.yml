@@ -1,0 +1,45 @@
+- role: "Research Assistant"
+  org: "Dr. Maide Ozen Lab, Johns Hopkins University School of Medicine"
+  meta: "Jan 2026 – Present · Baltimore, MD"
+  tags: ["computational biology", "bioinformatics"]
+  points:
+    - "Built an end-to-end pseudobulk RNA-seq pipeline characterizing microglial transcriptional heterogeneity across five developmental stages (E17–P60)."
+    - "Identified four transcriptional programmes with stage-specific regulatory transitions relevant to neuroinflammation and brain maturation."
+
+- role: "Research Assistant"
+  org: "Johns Hopkins University School of Medicine"
+  meta: "Dec 2025 – Apr 2026 · Baltimore, MD"
+  tags: ["AI/ML", "data science"]
+  points:
+    - "Designed and trained a deep generative model (scVI VAE) on 12,012 PBMC single cells to learn latent embeddings for clustering and cell-type annotation."
+    - "Benchmarked scVI against PCA with controlled train/test splits, logistic regression, and a PyTorch MLP classifier."
+
+- role: "Research Assistant"
+  org: "Johns Hopkins University"
+  meta: "Jun 2025 – Mar 2026 · Baltimore, MD"
+  tags: ["AI/ML", "data science"]
+  points:
+    - "Developed an ML pipeline for multiclass brain tumor classification from MRI radiomics features (Logistic Regression, Random Forest, XGBoost)."
+    - "Applied SHAP to identify the most predictive radiomic features; XGBoost reached 97.4% accuracy."
+
+- role: "Teaching Assistant, Practical Computer Concepts"
+  org: "Johns Hopkins University"
+  meta: "Aug 2025 – May 2026 · Baltimore, MD"
+  tags: ["bioinformatics"]
+  points:
+    - "Supported instruction in UNIX, SQL, and Python for a bioinformatics computing course."
+    - "Developed automated RNA-seq and proteomics analysis pipelines in Python and R for course demonstrations."
+
+- role: "Project Intern"
+  org: "BioAxis DNA Research Centre"
+  meta: "Jan 2024 – Apr 2024 · Hyderabad, India"
+  tags: ["wet lab", "bioinformatics"]
+  points:
+    - "Genomics and bioinformatics research internship at a molecular diagnostics and DNA research lab."
+
+- role: "Intern"
+  org: "BioNome, Genomics & Bioinformatics Solutions"
+  meta: "Jan 2023 – Apr 2023 · Bengaluru, India"
+  tags: ["wet lab", "bioinformatics"]
+  points:
+    - "Genomics and bioinformatics research internship focused on sequencing data and analysis workflows."

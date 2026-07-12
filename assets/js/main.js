@@ -8,7 +8,7 @@
   container.appendChild(canvas);
   var ctx = canvas.getContext("2d");
 
-  var colors = ["#35d0c0", "#f0a945", "#9b87f5"];
+  var colors = ["#2d3142", "#4a9eef", "#6d6f7c"];
 
   // Three loose "clusters" of points, echoing a UMAP embedding of cell
   // states — the actual visual language of this person's work.
@@ -67,7 +67,7 @@
       ctx.beginPath();
       ctx.arc(x, y, p.r, 0, Math.PI * 2);
       ctx.fillStyle = p.color;
-      ctx.globalAlpha = 0.55;
+      ctx.globalAlpha = 0.32;
       ctx.fill();
     }
   }

@@ -1,0 +1,19 @@
+- title: "An Integrated Study to Extrapolate the Interaction of NMDAR with Potential Ligands for the Treatment of Alzheimer's Disease Symptoms"
+  venue: "International Journal of Biotechnology and Bioengineering Research"
+  featured: true
+  badge: "Alzheimer's disease"
+  description: >-
+    Structure-based study examining NMDAR–ligand interactions relevant to
+    Alzheimer's disease symptom treatment, direct groundwork for a
+    research focus on computational approaches to neurodegeneration.
+  url: "https://journals.stmjournals.com/ijbbr/article=2023/view=107326/"
+
+- title: "Genome mining of secondary metabolites from Streptomyces spp. for the screening of novel and potent fungicide: Focus on rice blast disease"
+  venue: "ResearchGate"
+  featured: false
+  badge: ""
+  description: >-
+    Genome mining and ML-scored molecular docking pipeline identifying
+    antifungal candidates against the rice blast pathogen Magnaporthe
+    oryzae.
+  url: "https://www.researchgate.net/publication/395424172_Genome_mining_of_secondary_metabolites_from_Streptomyces_spp_for_the_screening_of_novel_and_potent_fungicide_Focus_on_rice_blast_disease"

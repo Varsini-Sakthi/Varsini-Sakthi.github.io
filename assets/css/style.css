@@ -2,17 +2,19 @@
    Tokens
    ============================================================ */
 :root {
-  --bg: #0a1120;
-  --surface: #101a2e;
-  --surface-2: #16223b;
-  --border: #223252;
-  --text: #eaf0fa;
-  --text-dim: #8b98b0;
+  --bg: #eae8ff;
+  --surface: #ffffff;
+  --surface-2: #f4f3fc;
+  --border: #d8d5db;
+  --text: #2d3142;
+  --text-dim: #6d6f7c;
 
-  --teal: #35d0c0;
-  --amber: #f0a945;
-  --violet: #9b87f5;
-  --coral: #ff6f6f;
+  --teal: #2d3142;      /* primary ink accent (was teal, now navy) */
+  --amber: #6d6f7c;     /* secondary slate accent (was amber) */
+  --violet: #4a9eef;    /* stronger blue for links/hover, derived from B0D7FF */
+  --coral: #adacb5;     /* mauve-grey, used for tag borders */
+  --sky: #b0d7ff;       /* signature accent: buttons, highlights */
+  --mauve: #adacb5;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -58,7 +60,155 @@ a {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 0.8;
+}
+
+/* ============================================================
+   Capabilities strip (AI/ML, Data Science, Computational Bio, Wet Lab)
+   ============================================================ */
+.capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.capability {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+  padding: 6px 13px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+/* ============================================================
+   Publications
+   ============================================================ */
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.publication {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.publication.is-featured {
+  border-color: var(--violet);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface));
+}
+
+.publication-main { max-width: 620px; }
+
+.publication-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--violet);
+  border: 1px solid var(--violet);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+}
+
+.publication h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.publication p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.publication-link {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--violet);
+  white-space: nowrap;
+}
+
+.publication-link:hover { color: var(--teal); }
+
+/* ============================================================
+   Experience timeline
+   ============================================================ */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+}
+
+.timeline-item:last-child { border-bottom: 1px solid var(--border); }
+
+.timeline-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.timeline-role {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 4px;
+}
+
+.timeline-body p {
+  margin: 0 0 10px;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ============================================================
+   Certifications
+   ============================================================ */
+.cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cert-list li {
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
 }
 
 /* ============================================================
@@ -158,11 +308,11 @@ a {
 
 .btn-primary {
   background: var(--teal);
-  color: #06110f;
+  color: var(--bg);
   font-weight: 500;
 }
 
-.btn-primary:hover { background: #4fe0d1; }
+.btn-primary:hover { background: var(--violet); }
 
 .btn-ghost {
   border-color: var(--border);
@@ -188,7 +338,7 @@ a {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--violet);
   margin: 0 0 28px;
 }
 
@@ -277,7 +427,7 @@ a {
 .project-metric {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--teal);
+  color: var(--violet);
   white-space: nowrap;
 }
 
@@ -341,7 +491,7 @@ a {
   width: fit-content;
 }
 
-.contact-links a:hover { color: var(--amber); }
+.contact-links a:hover { color: var(--violet); }
 
 /* ============================================================
    CV page
@@ -397,4 +547,7 @@ a {
   .project-grid { grid-template-columns: 1fr; }
   .site-nav { display: none; }
   .section { padding: 64px 20px; }
+  .timeline-item { grid-template-columns: 1fr; gap: 8px; }
+  .cert-list { grid-template-columns: 1fr; }
+  .publication { flex-direction: column; }
 }

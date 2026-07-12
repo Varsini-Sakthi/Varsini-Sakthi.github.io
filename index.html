@@ -8,13 +8,19 @@ title: ""
     <p class="eyebrow">Computational Biology / Machine Learning</p>
     <h1>Varsini Sakthi</h1>
     <p class="hero-lede">
-      I build computational and machine-learning tools to map cell states —
+      I build computational and machine-learning tools to map cell states,
       from microglia in the developing brain to single-cell atlases of
       neurodegeneration.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#projects">See the work</a>
       <a class="btn btn-ghost" href="{{ '/cv/' | relative_url }}">View CV</a>
+    </div>
+    <div class="capabilities">
+      <span class="capability">AI / ML</span>
+      <span class="capability">Data Science &amp; Analysis</span>
+      <span class="capability">Computational Biology</span>
+      <span class="capability">Wet Lab</span>
     </div>
   </div>
 </section>
@@ -35,8 +41,9 @@ title: ""
       <p>
         I'm pursuing a PhD in computational biology, with a research
         interest in applying AI/ML methods to Alzheimer's disease and
-        neurodegeneration — using single-cell and spatial data to understand
-        how cell states shift across disease progression.
+        neurodegeneration, using single-cell and spatial data, alongside
+        structure-based approaches to disease-relevant ligand interactions,
+        to understand how cell states shift across disease progression.
       </p>
     </div>
   </div>
@@ -64,16 +71,53 @@ title: ""
   </div>
 </section>
 
+<section id="publications" class="section">
+  <p class="section-label">03 · Publications</p>
+  <div class="publication-list">
+    {% for pub in site.data.publications %}
+    <article class="publication{% if pub.featured %} is-featured{% endif %}">
+      <div class="publication-main">
+        {% if pub.badge and pub.badge != "" %}<span class="publication-badge">{{ pub.badge }}</span><br>{% endif %}
+        <h3>{{ pub.title }}</h3>
+        <p>{{ pub.description }} <em>{{ pub.venue }}</em>.</p>
+      </div>
+      <a class="publication-link" href="{{ pub.url }}">Read &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <p class="section-label">04 · Experience</p>
+  <div class="timeline">
+    {% for job in site.data.experience %}
+    <div class="timeline-item">
+      <div class="timeline-meta">
+        {{ job.meta }}
+        <div class="timeline-role">{{ job.role }}</div>
+        <div>{{ job.org }}</div>
+      </div>
+      <div class="timeline-body">
+        {% for point in job.points %}<p>{{ point }}</p>{% endfor %}
+        <div class="timeline-tags">
+          {% for tag in job.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <section id="background" class="section">
-  <p class="section-label">03 · Background</p>
+  <p class="section-label">05 · Background</p>
   <div class="section-grid">
     <h2>MS Bioinformatics, Johns Hopkins University</h2>
     <div class="section-body">
       <p>
-        Graduated May 2026 (GPA 3.89). Currently a researcher in Dr. Maide
-        Ozen's lab at Johns Hopkins, working on a pseudobulk scRNA-seq
-        pipeline characterizing microglial transcriptional heterogeneity
-        across developmental stages.
+        Graduated May 2026 (GPA 3.89). B.Tech in Biotechnology, VIT
+        University (GPA 3.96, 2020–2024), wet-lab foundations in PCR, flow
+        cytometry, immunohistochemistry, and mouse colony management that
+        still inform how I think about the biology behind the data.
       </p>
       <p class="stack-label">Core stack</p>
       <ul class="stack-list">
@@ -86,12 +130,16 @@ title: ""
         <li>scikit-learn</li>
         <li>Unix / Linux</li>
       </ul>
+      <p class="stack-label">Certifications</p>
+      <ul class="cert-list">
+        {% for cert in site.data.certifications %}<li>{{ cert }}</li>{% endfor %}
+      </ul>
     </div>
   </div>
 </section>
 
 <section id="contact" class="section section-contact">
-  <p class="section-label">04 · Contact</p>
+  <p class="section-label">06 · Contact</p>
   <h2>Let's talk research.</h2>
   <div class="contact-links">
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
