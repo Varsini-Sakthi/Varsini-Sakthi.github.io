@@ -1,0 +1,62 @@
+- title: "SpatialFormer"
+  subtitle: "Spatially-aware transformer for cell state prediction"
+  tags: ["spatial transcriptomics", "deep learning", "transformers"]
+  metric: "89.1% val. accuracy"
+  description: >-
+    A spatially aware transformer encoder trained on 10x Visium mouse brain
+    data to predict cell state directly from spatial gene expression context,
+    deployed as a live demo on Hugging Face Spaces.
+  links:
+    - label: "Demo"
+      url: "#"
+    - label: "Code"
+      url: "https://github.com/Varsini-Sakthi"
+
+- title: "Microglial Transcriptional Heterogeneity"
+  subtitle: "Pseudobulk scRNA-seq across five developmental stages"
+  tags: ["scRNA-seq", "neuroimmunology", "pseudotime"]
+  metric: "4 programmes identified"
+  description: >-
+    Ongoing pipeline with Dr. Maide Ozen (Johns Hopkins) characterizing
+    microglial transcriptional heterogeneity across development, combining
+    module scoring, pseudotime trajectory inference, and differential
+    expression to resolve four distinct transcriptional programmes.
+  links:
+    - label: "Code"
+      url: "https://github.com/Varsini-Sakthi"
+
+- title: "scVI vs. PCA Benchmarking"
+  subtitle: "Representation learning for single-cell data"
+  tags: ["representation learning", "benchmarking", "single-cell"]
+  metric: "AUC 0.840 → 0.923"
+  description: >-
+    Benchmarked scVI variational autoencoders against standard PCA on 12,012
+    PBMCs, improving 5-fold cross-validated AUC and quantifying where deep
+    generative embeddings outperform linear methods.
+  links:
+    - label: "Code"
+      url: "https://github.com/Varsini-Sakthi"
+
+- title: "Brain Tumor MRI Classification"
+  subtitle: "Radiomics with interpretable ML"
+  tags: ["medical imaging", "interpretability", "radiomics"]
+  metric: "96% accuracy"
+  description: >-
+    Radiomics-feature classification pipeline for brain tumor MRI, paired
+    with SHAP-based interpretability to surface which imaging features drive
+    each prediction.
+  links:
+    - label: "Code"
+      url: "https://github.com/Varsini-Sakthi"
+
+- title: "Streptomyces Genome Mining"
+  subtitle: "Antifungal drug discovery, undergraduate research"
+  tags: ["drug discovery", "molecular docking", "genome mining"]
+  metric: "AutoDock · GROMACS"
+  description: >-
+    Genome mining pipeline for antifungal compound discovery in
+    Streptomyces, combining molecular docking, molecular dynamics
+    simulation, and ML-based scoring to prioritize candidate compounds.
+  links:
+    - label: "Code"
+      url: "https://github.com/Varsini-Sakthi"

@@ -1,0 +1,101 @@
+---
+layout: default
+title: ""
+---
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Computational Biology / Machine Learning</p>
+    <h1>Varsini Sakthi</h1>
+    <p class="hero-lede">
+      I build computational and machine-learning tools to map cell states —
+      from microglia in the developing brain to single-cell atlases of
+      neurodegeneration.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">See the work</a>
+      <a class="btn btn-ghost" href="{{ '/cv/' | relative_url }}">View CV</a>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section">
+  <p class="section-label">01 · Research focus</p>
+  <div class="section-grid">
+    <h2>Single-cell and spatial genomics, read through a machine-learning lens.</h2>
+    <div class="section-body">
+      <p>
+        My work sits at the intersection of computational biology and
+        applied ML: building pipelines and models that turn single-cell and
+        spatial transcriptomic data into interpretable biology. Most
+        recently, that has meant characterizing microglial transcriptional
+        programmes across brain development and benchmarking deep
+        generative models against classical methods for cell representation.
+      </p>
+      <p>
+        I'm pursuing a PhD in computational biology, with a research
+        interest in applying AI/ML methods to Alzheimer's disease and
+        neurodegeneration — using single-cell and spatial data to understand
+        how cell states shift across disease progression.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <p class="section-label">02 · Selected projects</p>
+  <div class="project-grid">
+    {% for project in site.data.projects %}
+    <article class="project-card">
+      <div class="project-card-top">
+        <h3>{{ project.title }}</h3>
+        <span class="project-metric">{{ project.metric }}</span>
+      </div>
+      <p class="project-subtitle">{{ project.subtitle }}</p>
+      <p class="project-desc">{{ project.description }}</p>
+      <div class="project-tags">
+        {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+      <div class="project-links">
+        {% for link in project.links %}<a href="{{ link.url }}">{{ link.label }} &rarr;</a>{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="background" class="section">
+  <p class="section-label">03 · Background</p>
+  <div class="section-grid">
+    <h2>MS Bioinformatics, Johns Hopkins University</h2>
+    <div class="section-body">
+      <p>
+        Graduated May 2026 (GPA 3.89). Currently a researcher in Dr. Maide
+        Ozen's lab at Johns Hopkins, working on a pseudobulk scRNA-seq
+        pipeline characterizing microglial transcriptional heterogeneity
+        across developmental stages.
+      </p>
+      <p class="stack-label">Core stack</p>
+      <ul class="stack-list">
+        <li>Python</li>
+        <li>R</li>
+        <li>PyTorch</li>
+        <li>Scanpy</li>
+        <li>scVI</li>
+        <li>Seurat</li>
+        <li>scikit-learn</li>
+        <li>Unix / Linux</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-contact">
+  <p class="section-label">04 · Contact</p>
+  <h2>Let's talk research.</h2>
+  <div class="contact-links">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a href="{{ site.linkedin_url }}">linkedin.com/in/varsini-sakthi</a>
+    <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
+  </div>
+</section>
