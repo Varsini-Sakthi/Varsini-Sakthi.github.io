@@ -3,12 +3,13 @@
   tags: ["AI/ML", "spatial transcriptomics", "computational biology"]
   metric: "89.1% val. accuracy"
   description: >-
-    A transformer that jointly encodes each 10x Visium spot with its six
-    spatial neighbors, using additive expression, coordinate, and
-    token-type embeddings through a 2-layer, 4-head encoder. Achieves
-    89.1% validation accuracy on 10x mouse brain data (2,796 spots, 2,000
-    HVGs). Deployed as a live inference app with attention and gene
-    saliency interpretability.
+    Designed and trained a transformer that jointly encodes each 10x Visium
+    spot with its six spatial neighbors, using additive expression,
+    coordinate, and token-type embeddings through a 2-layer, 4-head
+    encoder. Reached 89.1% validation accuracy on 10x mouse brain data
+    (2,796 spots, 2,000 HVGs) and deployed a live inference app on Hugging
+    Face Spaces with attention and gene-saliency interpretability, end to
+    end from architecture design to public deployment.
   links:
     - label: "Live demo"
       url: "https://huggingface.co/spaces/Varsini-Sakthi/Spatialformer"
@@ -67,13 +68,15 @@
   tags: ["wet lab", "computational biology", "drug discovery"]
   metric: "Published · 2 lead inhibitors"
   description: >-
-    Computational discovery pipeline integrating genome mining, molecular
-    docking, and ML scoring to identify antifungal metabolites from
-    Streptomyces targeting scytalone dehydratase in Magnaporthe oryzae, the
-    rice blast pathogen. Ran docking and MD simulations (AutoDock, GROMACS;
-    RMSD/RMSF stability analysis) and applied similarity scoring and ML
-    models (Rscoring, Kdeep, Gnina), identifying Cremomycin and
-    Azetidomonamide B as candidate inhibitors.
+    Built a computational discovery pipeline combining genome mining,
+    molecular docking, and ML scoring to identify antifungal candidates
+    from Streptomyces targeting scytalone dehydratase, a virulence enzyme
+    in the rice blast pathogen Magnaporthe oryzae. Ran docking and
+    molecular dynamics simulations (AutoDock, GROMACS; RMSD/RMSF
+    stability analysis) and applied ensemble scoring models (Rscoring,
+    Kdeep, Gnina) to flag two promising inhibitor candidates, Cremomycin
+    and Azetidomonamide B, an early demonstration of pairing wet-lab
+    biology intuition with computational screening.
   links:
     - label: "Publication"
       url: "https://www.researchgate.net/publication/395424172_Genome_mining_of_secondary_metabolites_from_Streptomyces_spp_for_the_screening_of_novel_and_potent_fungicide_Focus_on_rice_blast_disease"

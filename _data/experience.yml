@@ -3,32 +3,32 @@
   meta: "Jan 2026 – Present · Baltimore, MD"
   tags: ["computational biology", "bioinformatics"]
   points:
-    - "Built an end-to-end pseudobulk RNA-seq pipeline characterizing microglial transcriptional heterogeneity across five developmental stages (E17–P60)."
-    - "Identified four transcriptional programmes with stage-specific regulatory transitions relevant to neuroinflammation and brain maturation."
+    - "Built an end-to-end pseudobulk RNA-seq pipeline characterizing microglial transcriptional heterogeneity across five developmental stages (E17–P60), combining z-scored gene module scoring, PCA, differential expression, and pseudotime trajectory inference."
+    - "Identified four distinct transcriptional programmes with coordinated activity shifts across development, work headed toward manuscript submission that directly informs neuroinflammation and brain-maturation biology."
 
 - role: "Research Assistant"
   org: "Johns Hopkins University School of Medicine"
   meta: "Dec 2025 – Apr 2026 · Baltimore, MD"
   tags: ["AI/ML", "data science"]
   points:
-    - "Designed and trained a deep generative model (scVI VAE) on 12,012 PBMC single cells to learn latent embeddings for clustering and cell-type annotation."
-    - "Benchmarked scVI against PCA with controlled train/test splits, logistic regression, and a PyTorch MLP classifier."
+    - "Designed and trained a variational autoencoder (scVI) on 12,012 PBMC single cells to learn 30-dimensional latent embeddings for dimensionality reduction, UMAP visualization, and cell-type annotation across 12 populations."
+    - "Ran a controlled benchmark against PCA using identical downstream classifiers (logistic regression, PyTorch MLP): PCA edged out scVI on raw classification accuracy, while scVI produced more biologically coherent latent structure, a result that speaks to when deep generative models do and don't pay off on single-batch data."
 
 - role: "Research Assistant"
   org: "Johns Hopkins University"
   meta: "Jun 2025 – Mar 2026 · Baltimore, MD"
   tags: ["AI/ML", "data science"]
   points:
-    - "Developed an ML pipeline for multiclass brain tumor classification from MRI radiomics features (Logistic Regression, Random Forest, XGBoost)."
-    - "Applied SHAP to identify the most predictive radiomic features; XGBoost reached 97.4% accuracy."
+    - "Developed a multiclass ML pipeline for brain tumor classification from MRI radiomics features, training and tuning Logistic Regression, Random Forest, and XGBoost with RandomizedSearchCV and 5-fold cross-validation."
+    - "Used SHAP to identify the most predictive radiomic features for interpretability; XGBoost reached 97.4% accuracy, Random Forest 95.5%."
 
 - role: "Teaching Assistant, Practical Computer Concepts"
   org: "Johns Hopkins University"
   meta: "Aug 2025 – May 2026 · Baltimore, MD"
   tags: ["bioinformatics"]
   points:
-    - "Supported instruction in UNIX, SQL, and Python for a bioinformatics computing course."
-    - "Developed automated RNA-seq and proteomics analysis pipelines in Python and R for course demonstrations."
+    - "Supported instruction in UNIX, SQL, and Python for a bioinformatics computing course, and built automated RNA-seq and proteomics analysis pipelines in Python and R used in course demonstrations and student workflows."
+    - "Translated research-grade pipelines into teaching material for a mixed-background cohort."
 
 - role: "Project Intern"
   org: "BioAxis DNA Research Centre"

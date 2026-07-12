@@ -110,36 +110,43 @@ title: ""
 
 <section id="background" class="section">
   <p class="section-label">05 · Background</p>
-  <div class="section-grid">
-    <h2>MS Bioinformatics, Johns Hopkins University</h2>
-    <div class="section-body">
-      <p>
-        Graduated May 2026 (GPA 3.89). B.Tech in Biotechnology, VIT
-        University (GPA 3.96, 2020–2024), wet-lab foundations in PCR, flow
-        cytometry, immunohistochemistry, and mouse colony management that
-        still inform how I think about the biology behind the data.
-      </p>
-      <p class="stack-label">Core stack</p>
-      <ul class="stack-list">
-        <li>Python</li>
-        <li>R</li>
-        <li>PyTorch</li>
-        <li>Scanpy</li>
-        <li>scVI</li>
-        <li>Seurat</li>
-        <li>scikit-learn</li>
-        <li>Unix / Linux</li>
-      </ul>
-      <p class="stack-label">Certifications</p>
-      <ul class="cert-list">
-        {% for cert in site.data.certifications %}<li>{{ cert }}</li>{% endfor %}
-      </ul>
-    </div>
+  <h2 style="font-family: var(--font-display); font-size: 1.9rem; font-weight: 500; margin: 0 0 32px;">Education</h2>
+  <div class="education-list">
+    {% for edu in site.data.education %}
+    <article class="education-item">
+      <h3>{{ edu.degree }}</h3>
+      <p class="education-school">{{ edu.school }}</p>
+      <p class="education-meta">{{ edu.meta }}</p>
+      <p class="coursework-label">Relevant coursework</p>
+      <div class="coursework-list">
+        {% for course in edu.coursework %}<span class="tag">{{ course }}</span>{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
   </div>
+
+  <p class="stack-label" style="margin-top: 40px;">Core stack</p>
+  <ul class="stack-list">
+    <li>Python</li>
+    <li>R</li>
+    <li>PyTorch</li>
+    <li>Scanpy</li>
+    <li>scVI</li>
+    <li>Seurat</li>
+    <li>scikit-learn</li>
+    <li>Unix / Linux</li>
+  </ul>
+</section>
+
+<section id="certifications" class="section">
+  <p class="section-label">06 · Certifications</p>
+  <ul class="cert-list">
+    {% for cert in site.data.certifications %}<li>{{ cert }}</li>{% endfor %}
+  </ul>
 </section>
 
 <section id="contact" class="section section-contact">
-  <p class="section-label">06 · Contact</p>
+  <p class="section-label">07 · Contact</p>
   <h2>Let's talk research.</h2>
   <div class="contact-links">
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>

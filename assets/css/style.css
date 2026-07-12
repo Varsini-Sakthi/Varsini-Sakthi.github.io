@@ -192,6 +192,57 @@ a {
 }
 
 /* ============================================================
+   Education
+   ============================================================ */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.education-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 26px 28px;
+}
+
+.education-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.education-school {
+  font-weight: 500;
+  color: var(--text);
+  margin: 0 0 2px;
+}
+
+.education-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin: 0 0 16px;
+}
+
+.coursework-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  margin: 0 0 10px;
+}
+
+.coursework-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ============================================================
    Certifications
    ============================================================ */
 .cert-list {
