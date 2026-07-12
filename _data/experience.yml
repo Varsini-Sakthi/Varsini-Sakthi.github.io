@@ -1,45 +1,51 @@
 - role: "Research Assistant"
   org: "Dr. Maide Ozen Lab, Johns Hopkins University School of Medicine"
-  meta: "Jan 2026 – Present · Baltimore, MD"
-  tags: ["computational biology", "bioinformatics"]
+  meta: "Jan 2026 - Present · Baltimore, MD"
+  tags: ["computational biology", "bioinformatics", "R programming", "RNA-seq analysis"]
   points:
-    - "Built an end-to-end pseudobulk RNA-seq pipeline characterizing microglial transcriptional heterogeneity across five developmental stages (E17–P60), combining z-scored gene module scoring, PCA, differential expression, and pseudotime trajectory inference."
+    - "Built an end-to-end pseudobulk RNA-seq pipeline characterizing microglial transcriptional heterogeneity across five developmental stages (E17-P60), combining z-scored gene module scoring, PCA, differential expression, and pseudotime trajectory inference."
     - "Identified four distinct transcriptional programmes with coordinated activity shifts across development, work headed toward manuscript submission that directly informs neuroinflammation and brain-maturation biology."
 
 - role: "Research Assistant"
   org: "Johns Hopkins University School of Medicine"
-  meta: "Dec 2025 – Apr 2026 · Baltimore, MD"
-  tags: ["AI/ML", "data science"]
+  meta: "Dec 2025 - Apr 2026 · Baltimore, MD"
+  tags: ["AI/ML", "data science", "computational biology", "Python", "scRNA-seq analysis", "deep learning (PyTorch)"]
   points:
     - "Designed and trained a variational autoencoder (scVI) on 12,012 PBMC single cells to learn 30-dimensional latent embeddings for dimensionality reduction, UMAP visualization, and cell-type annotation across 12 populations."
     - "Ran a controlled benchmark against PCA using identical downstream classifiers (logistic regression, PyTorch MLP): PCA edged out scVI on raw classification accuracy, while scVI produced more biologically coherent latent structure, a result that speaks to when deep generative models do and don't pay off on single-batch data."
 
 - role: "Research Assistant"
   org: "Johns Hopkins University"
-  meta: "Jun 2025 – Mar 2026 · Baltimore, MD"
-  tags: ["AI/ML", "data science"]
+  meta: "Jun 2025 - Mar 2026 · Baltimore, MD"
+  tags: ["AI/ML", "data science", "brain tumor classification", "radiomics datasets"]
   points:
     - "Developed a multiclass ML pipeline for brain tumor classification from MRI radiomics features, training and tuning Logistic Regression, Random Forest, and XGBoost with RandomizedSearchCV and 5-fold cross-validation."
     - "Used SHAP to identify the most predictive radiomic features for interpretability; XGBoost reached 97.4% accuracy, Random Forest 95.5%."
 
 - role: "Teaching Assistant, Practical Computer Concepts"
   org: "Johns Hopkins University"
-  meta: "Aug 2025 – May 2026 · Baltimore, MD"
-  tags: ["bioinformatics"]
+  meta: "Aug 2025 - May 2026 · Baltimore, MD"
+  tags: ["bioinformatics", "Linux/Unix", "SQL", "Python", "R programming", "proteomics analysis"]
   points:
     - "Supported instruction in UNIX, SQL, and Python for a bioinformatics computing course, and built automated RNA-seq and proteomics analysis pipelines in Python and R used in course demonstrations and student workflows."
     - "Translated research-grade pipelines into teaching material for a mixed-background cohort."
 
 - role: "Project Intern"
   org: "BioAxis DNA Research Centre"
-  meta: "Jan 2024 – Apr 2024 · Hyderabad, India"
-  tags: ["wet lab", "bioinformatics"]
+  meta: "Jan 2024 - Apr 2024 · Hyderabad, India"
+  tags: ["wet lab", "bioinformatics", "genomics", "amyloid & tau", "Alzheimer's disease"]
   points:
-    - "Genomics and bioinformatics research internship at a molecular diagnostics and DNA research lab."
+    - "Worked on a bioinformatics-focused research project investigating amyloid and tau pathology in Alzheimer's disease, the same neurodegeneration focus that continues to anchor my research interests today."
+    - "The work spanned genomics and proteomics analysis to characterize disease-relevant proteins, immunoinformatics approaches to understand immune-related mechanisms in neurodegeneration, and structural biology methods to examine protein conformations tied to amyloid and tau aggregation."
+    - "Gained hands-on exposure to SNP and alternative splicing analysis, along with pattern-recognition techniques for detecting meaningful biological signal in complex datasets. This was where I first started thinking computationally about Alzheimer's disease specifically, connecting molecular-level structural biology to the broader question of what drives neurodegenerative progression, a thread I've carried into my graduate research since."
+    - "Focus areas: Bioinformatics · Genomics · Proteomics · Immunoinformatics · Structural Biology · SNP Analysis"
 
 - role: "Intern"
   org: "BioNome, Genomics & Bioinformatics Solutions"
-  meta: "Jan 2023 – Apr 2023 · Bengaluru, India"
-  tags: ["wet lab", "bioinformatics"]
+  meta: "Jan 2023 - Apr 2023 · Bengaluru, India"
+  tags: ["wet lab", "bioinformatics", "Alzheimer's disease", "ADMET", "NMDAR"]
   points:
-    - "Genomics and bioinformatics research internship focused on sequencing data and analysis workflows."
+    - "Worked on dry-lab computational research centered on drug discovery and molecular simulation. The core project, and the one that led to my first-author publication, involved docking the NMDAR receptor, a key therapeutic target in Alzheimer's disease, against six candidate phytocompounds using PyRx."
+    - "After ranking candidates by binding affinity, carried the top four (curcumin, L-epicatechin, ginsenosides, and resveratrol) through ADMET profiling and structural visualization in BIOVIA Discovery Studio to assess their pharmacological viability as potential AD symptom treatments. Published in the International Journal of Biochemistry and Biomolecule Research (2023)."
+    - "Also exposed to the broader computational drug-discovery toolkit: AI/ML-driven compound scoring, QSAR modeling, and pharmacophore-based screening for disease-target identification, as well as genomics-side work like SNP calling from whole-exome sequencing data and subtractive proteomics for annotating hypothetical proteins. This internship was my first real introduction to computational drug discovery, bridging molecular docking and simulation with the AI/ML methods I've since built my research career around."
+    - "Focus areas: Molecular Docking · Molecular Dynamics · Drug Discovery (AI/ML) · QSAR · ADMET Profiling · Genomics"

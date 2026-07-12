@@ -262,6 +262,14 @@ a {
   background: var(--surface);
 }
 
+.cert-list li a {
+  color: var(--violet);
+}
+
+.cert-list li a:hover {
+  color: var(--teal);
+}
+
 /* ============================================================
    Header
    ============================================================ */

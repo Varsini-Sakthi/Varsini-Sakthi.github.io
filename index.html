@@ -39,9 +39,9 @@ title: ""
         generative models against classical methods for cell representation.
       </p>
       <p>
-        I'm pursuing a PhD in computational biology, with a research
-        interest in applying AI/ML methods to Alzheimer's disease and
-        neurodegeneration, using single-cell and spatial data, alongside
+        I am interested in pursuing a PhD in computational biology, with a
+        research interest in applying AI/ML methods to Alzheimer's disease
+        and neurodegeneration, using single-cell and spatial data, alongside
         structure-based approaches to disease-relevant ligand interactions,
         to understand how cell states shift across disease progression.
       </p>
@@ -135,13 +135,22 @@ title: ""
     <li>Seurat</li>
     <li>scikit-learn</li>
     <li>Unix / Linux</li>
+    <li>Neurodegenerative disease (Alzheimer's)</li>
+    <li>Machine Learning</li>
+    <li>Deep Learning (PyTorch)</li>
   </ul>
 </section>
 
 <section id="certifications" class="section">
   <p class="section-label">06 · Certifications</p>
   <ul class="cert-list">
-    {% for cert in site.data.certifications %}<li>{{ cert }}</li>{% endfor %}
+    {% for cert in site.data.certifications %}
+      {% if cert.url and cert.url != "" %}
+      <li><a href="{{ cert.url }}">{{ cert.name }} &rarr;</a></li>
+      {% else %}
+      <li>{{ cert.name }}</li>
+      {% endif %}
+    {% endfor %}
   </ul>
 </section>
 
