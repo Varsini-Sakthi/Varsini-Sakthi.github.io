@@ -1,16 +1,25 @@
 - title: "SpatialFormer"
   subtitle: "Spatially-aware transformer for cell state prediction"
   tags: ["AI/ML", "spatial transcriptomics", "computational biology"]
-  metric: "89.1% val. accuracy"
+  metric: "89-91% acc. (vs. 92.3% LR)"
   description: >-
     Designed a neighborhood-aware transformer architecture that represents
     each 10x Visium spot as a biological context sequence with its six
     spatial neighbors, using additive expression, coordinate, and
-    token-type embeddings through a 2-layer, 4-head encoder, enabling
-    interpretable analysis of how neighboring spots contribute to a cell
-    state prediction. Reached 89.1% validation accuracy on 10x mouse brain
-    data (2,796 spots, 2,000 HVGs) and deployed a live inference app on
-    Hugging Face Spaces with attention and gene-saliency interpretability.
+    token-type embeddings through a 2-layer, 4-head encoder. Benchmarked
+    against expression-only baselines on 10x mouse brain data (2,796
+    spots, 2,000 HVGs): logistic regression reached 92.3% validation
+    accuracy versus 89-91% for the transformer. Attention analysis shows
+    the model relies primarily on query-cell expression and uses spatial
+    neighbor context as a secondary signal, an interpretable finding in
+    its own right rather than a raw accuracy win. Deployed as a live
+    inference app on Hugging Face Spaces with attention and gene-saliency
+    visualization.
+  note: >-
+    Evaluated with a random, stratified spot-level train/test split.
+    Because neighboring Visium spots are spatially autocorrelated, a
+    spatially blocked split is the natural next step to rule out
+    neighbor-level leakage.
   links:
     - label: "Live demo"
       url: "https://huggingface.co/spaces/Varsini-Sakthi/Spatialformer"
@@ -44,22 +53,31 @@
     embeddings actually pay off for cell-type classification. PCA matched
     or exceeded scVI on raw classification accuracy (95.1% vs. 91.4%;
     5-fold CV 88.6% vs. 86.1%), while scVI's embeddings were more
-    biologically coherent, evidence that representation quality and downstream task performance can diverge,
-    and that added model complexity isn't free.
+    biologically coherent, highlighting conditions where deep generative
+    models provide biological advantages despite not improving downstream
+    classification accuracy.
   links:
     - label: "GitHub"
       url: "https://github.com/Varsini-Sakthi"
 
 - title: "Brain Tumor MRI Classification"
-  subtitle: "Radiomics with interpretable ML"
+  subtitle: "Radiomics with interpretable ML (preliminary)"
   tags: ["AI/ML", "data science", "medical imaging"]
-  metric: "XGBoost: 97.4% accuracy"
+  metric: "97.4% acc. (pilot, n=3 patients)"
   description: >-
-    End-to-end ML pipeline for multiclass brain tumor classification from
-    MRI radiomics features. Trained Logistic Regression, Random Forest, and
-    XGBoost with RandomizedSearchCV tuning and 5-fold cross-validation
-    (XGBoost 97.4%, Random Forest 95.5%), then applied SHAP to surface the
-    most predictive radiomic features driving each prediction.
+    Preliminary ML pipeline for multiclass brain tumor classification from
+    MRI radiomics features, on a subset of the Cheng et al. dataset (766
+    image slices from 3 patients). Trained and tuned Logistic Regression,
+    Random Forest, and XGBoost with RandomizedSearchCV and cross-validation
+    (XGBoost 97.4%, Random Forest 95.5% on this subset), then applied SHAP
+    to surface the most predictive radiomic features.
+  note: >-
+    This subset is heavily patient-imbalanced and the current split is
+    per-image rather than patient-grouped, so the reported accuracy likely
+    overstates real-world performance; class imbalance also means a
+    trivial baseline already scores near 92%. Patient-level
+    cross-validation and validation on the full 233-patient dataset are
+    the immediate next steps.
   links:
     - label: "GitHub"
       url: "https://github.com/Varsini-Sakthi"

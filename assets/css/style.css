@@ -532,6 +532,15 @@ a {
   margin: 0 0 18px;
 }
 
+.project-note {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-style: italic;
+  border-left: 2px solid var(--border);
+  padding-left: 12px;
+  margin: 0 0 18px;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;

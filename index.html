@@ -66,6 +66,7 @@ title: ""
       </div>
       <p class="project-subtitle">{{ project.subtitle }}</p>
       <p class="project-desc">{{ project.description }}</p>
+      {% if project.note and project.note != "" %}<p class="project-note">{{ project.note }}</p>{% endif %}
       <div class="project-tags">
         {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
       </div>

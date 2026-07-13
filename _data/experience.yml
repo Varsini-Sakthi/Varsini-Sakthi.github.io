@@ -20,7 +20,7 @@
   tags: ["AI/ML", "data science", "brain tumor classification", "radiomics datasets"]
   points:
     - "Developed a multiclass ML pipeline for brain tumor classification from MRI radiomics features, training and tuning Logistic Regression, Random Forest, and XGBoost with RandomizedSearchCV and 5-fold cross-validation."
-    - "Used SHAP to identify the most predictive radiomic features for interpretability; XGBoost reached 97.4% accuracy, Random Forest 95.5%."
+    - "Used SHAP to identify the most predictive radiomic features for interpretability; XGBoost reached 97.4% accuracy, Random Forest 95.5%, on a preliminary 3-patient subset. Patient-level cross-validation on the full dataset is the next step to validate these numbers hold up."
 
 - role: "Teaching Assistant, Practical Computer Concepts"
   org: "Johns Hopkins University"
