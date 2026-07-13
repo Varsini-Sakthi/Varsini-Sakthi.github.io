@@ -35,9 +35,9 @@
   meta: "Jan 2024 - Apr 2024 · Hyderabad, India"
   tags: ["wet lab", "bioinformatics", "genomics", "amyloid & tau", "Alzheimer's disease"]
   points:
-    - "Worked on a bioinformatics-focused research project investigating amyloid and tau pathology in Alzheimer's disease, the same neurodegeneration focus that continues to anchor my research interests today."
+    - "Worked on a bioinformatics-focused research project investigating amyloid and tau pathology in Alzheimer's disease, the same disease focus my current research builds on."
     - "The work spanned genomics and proteomics analysis to characterize disease-relevant proteins, immunoinformatics approaches to understand immune-related mechanisms in neurodegeneration, and structural biology methods to examine protein conformations tied to amyloid and tau aggregation."
-    - "Gained hands-on exposure to SNP and alternative splicing analysis, along with pattern-recognition techniques for detecting meaningful biological signal in complex datasets. This was where I first started thinking computationally about Alzheimer's disease specifically, connecting molecular-level structural biology to the broader question of what drives neurodegenerative progression, a thread I've carried into my graduate research since."
+    - "Gained hands-on exposure to SNP and alternative splicing analysis, along with pattern-recognition techniques for detecting meaningful biological signal in complex datasets. This project introduced me to computational approaches for studying neurodegenerative disease specifically, connecting molecular-level structural biology to the broader question of what drives disease progression."
     - "Focus areas: Bioinformatics · Genomics · Proteomics · Immunoinformatics · Structural Biology · SNP Analysis"
 
 - role: "Intern"

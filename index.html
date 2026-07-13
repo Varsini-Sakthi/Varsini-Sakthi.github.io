@@ -45,6 +45,12 @@ title: ""
         structure-based approaches to disease-relevant ligand interactions,
         to understand how cell states shift across disease progression.
       </p>
+      <p class="stack-label" style="margin-top: 28px;">Research questions I keep coming back to</p>
+      <ul class="research-questions">
+        <li>How do cell states shift across neurodegenerative disease progression, and what does that shift look like at single-cell and spatial resolution?</li>
+        <li>When do deep generative models offer a real biological advantage over simpler baselines like PCA, and when does the added complexity not pay off?</li>
+        <li>Can attention-based architectures make spatial transcriptomics predictions interpretable enough to generate testable biological hypotheses, not just accurate ones?</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -87,8 +93,23 @@ title: ""
   </div>
 </section>
 
+<section id="outputs" class="section">
+  <p class="section-label">04 · Research outputs</p>
+  <ul class="research-questions" style="gap: 14px;">
+    <li>2 peer-reviewed publications (Alzheimer's/NMDAR structural study; Streptomyces genome mining for antifungal discovery)</li>
+    <li>1 manuscript in preparation, on microglial transcriptional heterogeneity across brain development (Ozen Lab)</li>
+    <li>SpatialFormer deployed as a live, public inference app on <a href="https://huggingface.co/spaces/Varsini-Sakthi/Spatialformer">Hugging Face Spaces</a></li>
+    <li>Project code and pipelines on <a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+  </ul>
+</section>
+
 <section id="experience" class="section">
-  <p class="section-label">04 · Experience</p>
+  <p class="section-label">05 · Experience</p>
+  <p style="color: var(--text-dim); font-size: 0.9rem; margin: -12px 0 28px;">
+    The three Johns Hopkins research assistantships overlap in date because
+    they were concurrent projects within the same research period, not
+    sequential roles.
+  </p>
   <div class="timeline">
     {% for job in site.data.experience %}
     <div class="timeline-item">
@@ -109,7 +130,7 @@ title: ""
 </section>
 
 <section id="background" class="section">
-  <p class="section-label">05 · Background</p>
+  <p class="section-label">06 · Background</p>
   <h2 style="font-family: var(--font-display); font-size: 1.9rem; font-weight: 500; margin: 0 0 32px;">Education</h2>
   <div class="education-list">
     {% for edu in site.data.education %}
@@ -121,6 +142,7 @@ title: ""
       <div class="coursework-list">
         {% for course in edu.coursework %}<span class="tag">{{ course }}</span>{% endfor %}
       </div>
+      <p class="education-gpa">{{ edu.gpa }}</p>
     </article>
     {% endfor %}
   </div>
@@ -142,7 +164,7 @@ title: ""
 </section>
 
 <section id="certifications" class="section">
-  <p class="section-label">06 · Certifications</p>
+  <p class="section-label">07 · Certifications</p>
   <ul class="cert-list">
     {% for cert in site.data.certifications %}
       {% if cert.url and cert.url != "" %}
@@ -155,7 +177,7 @@ title: ""
 </section>
 
 <section id="contact" class="section section-contact">
-  <p class="section-label">07 · Contact</p>
+  <p class="section-label">08 · Contact</p>
   <h2>Let's talk research.</h2>
   <div class="contact-links">
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>

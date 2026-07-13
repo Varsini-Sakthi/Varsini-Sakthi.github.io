@@ -227,6 +227,13 @@ a {
   margin: 0 0 16px;
 }
 
+.education-gpa {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  margin: 14px 0 0;
+}
+
 .coursework-label {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -427,6 +434,29 @@ a {
   letter-spacing: 0.06em;
   color: var(--text-dim);
   margin: 28px 0 12px;
+}
+
+.research-questions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.research-questions li {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  padding-left: 18px;
+  position: relative;
+}
+
+.research-questions li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--violet);
 }
 
 .stack-list {

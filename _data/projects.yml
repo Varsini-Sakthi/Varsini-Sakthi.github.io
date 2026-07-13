@@ -3,13 +3,14 @@
   tags: ["AI/ML", "spatial transcriptomics", "computational biology"]
   metric: "89.1% val. accuracy"
   description: >-
-    Designed and trained a transformer that jointly encodes each 10x Visium
-    spot with its six spatial neighbors, using additive expression,
-    coordinate, and token-type embeddings through a 2-layer, 4-head
-    encoder. Reached 89.1% validation accuracy on 10x mouse brain data
-    (2,796 spots, 2,000 HVGs) and deployed a live inference app on Hugging
-    Face Spaces with attention and gene-saliency interpretability, end to
-    end from architecture design to public deployment.
+    Designed a neighborhood-aware transformer architecture that represents
+    each 10x Visium spot as a biological context sequence with its six
+    spatial neighbors, using additive expression, coordinate, and
+    token-type embeddings through a 2-layer, 4-head encoder, enabling
+    interpretable analysis of how neighboring spots contribute to a cell
+    state prediction. Reached 89.1% validation accuracy on 10x mouse brain
+    data (2,796 spots, 2,000 HVGs) and deployed a live inference app on
+    Hugging Face Spaces with attention and gene-saliency interpretability.
   links:
     - label: "Live demo"
       url: "https://huggingface.co/spaces/Varsini-Sakthi/Spatialformer"
@@ -37,14 +38,14 @@
   tags: ["AI/ML", "data science", "single-cell"]
   metric: "LR: 95.1% vs. 91.4%"
   description: >-
-    Trained a deep generative model (scVI VAE) on 12,012 PBMC single cells
-    to learn 30-dimensional latent embeddings for UMAP visualization,
-    Leiden clustering, and annotation of 12 PBMC populations. Benchmarked
-    against PCA using shared train/test splits, logistic regression, and a
-    PyTorch MLP: PCA outperformed scVI on classification accuracy (95.1%
-    vs. 91.4%; 5-fold CV 88.6% vs. 86.1%), while scVI produced more
-    biologically coherent latent structure, evidence that strong linear
-    baselines can rival deep generative models on single-batch data.
+    Trained a deep generative model (scVI VAE) on 12,012 PBMCs and
+    benchmarked it against PCA using identical downstream classifiers
+    (logistic regression, PyTorch MLP) to test when deep generative
+    embeddings actually pay off for cell-type classification. PCA matched
+    or exceeded scVI on raw classification accuracy (95.1% vs. 91.4%;
+    5-fold CV 88.6% vs. 86.1%), while scVI's embeddings were more
+    biologically coherent, evidence that representation quality and downstream task performance can diverge,
+    and that added model complexity isn't free.
   links:
     - label: "GitHub"
       url: "https://github.com/Varsini-Sakthi"

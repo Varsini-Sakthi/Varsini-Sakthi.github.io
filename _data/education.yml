@@ -1,6 +1,7 @@
 - degree: "Master of Science, Bioinformatics"
   school: "Johns Hopkins University"
-  meta: "Aug 2024 – May 2026 · Baltimore, MD · GPA 3.89/4.0"
+  meta: "Aug 2024 - May 2026 · Baltimore, MD"
+  gpa: "GPA 3.89/4.0"
   coursework:
     - "Applied Machine Learning"
     - "Algorithms for Bioinformatics"
@@ -15,7 +16,8 @@
 
 - degree: "Bachelor of Technology, Biotechnology"
   school: "Vellore Institute of Technology"
-  meta: "Sep 2020 – May 2024 · Vellore, India · GPA 3.96/4.0"
+  meta: "Sep 2020 - May 2024 · Vellore, India"
+  gpa: "GPA 3.96/4.0"
   coursework:
     - "Bioinformatics"
     - "Genomics"
